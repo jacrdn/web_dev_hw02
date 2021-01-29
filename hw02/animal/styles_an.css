@@ -1,0 +1,27 @@
+.header{
+    color: blue;
+}
+
+.header > h1 > .C {
+    color: red;
+}
+
+.header > h1 > .T {
+    color: green;
+}
+
+.table {
+    border: 1px solid black;
+}
+
+.th {
+    border: 1px solid black;
+}
+
+.td {
+    border: 1px solid black;
+}
+
+.tr {
+    border: 1px solid black;
+}

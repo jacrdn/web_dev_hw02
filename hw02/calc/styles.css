@@ -1,0 +1,75 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* to set a button to be double the normal width */
+.double-width {
+    grid-column: span 2;
+}
+
+
+/* to set a button to be triple the normal width */
+.triple-width {
+    grid-column: span 3;
+}
+
+/* calculator layout */
+.calc-layout {
+    display: grid;
+    justify-content: left;
+    align-content: center;
+    min-height: 100px;
+    min-width: 100px;
+    max-width: 160px;
+    grid-template-columns: repeat(4, 125);
+    grid-template-rows: repeat(5, 125);
+}
+
+/* setting each of the calc's buttons */
+.calc-layout > button {
+    border: 1px solid black;
+    background-color: pink;
+    font-size: 32px;
+    outline: none;
+}
+
+/* setting the output window at the top of the calculator*/
+.out {
+    grid-column: 1 / 5;
+    background-color: plum;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    min-height: 50px;
+    max-width: 160px;
+}
+
+/* setting the output number */
+.out > .curr-num {
+    color: black;
+    font-size: 28px;
+    word-wrap: break-word;
+    word-break: break-all;
+    max-width: 125px;
+}
+
+/* 
+ * it was useful to show both the stored number
+ * and operation for debugging my javascript code but i decided
+ * to leave it in my final submission because i actually just prefer
+ * to see both of these elements while making calculations
+ * 
+ * */
+
+.out > .str-num {
+	align-self: flex-start;
+}
+
+.out > .op {
+	align-self: flex-start;
+}
