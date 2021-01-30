@@ -34,7 +34,7 @@ Very
 8. Do all of your HTML pages pass the W3C HTML validator?
 (https://validator.w3.org/)
 
-No, but they all work, I wish I had known about this ahead of time in the assignment so that i could have time to properly fix the error/warnings. 
+Yes, all of the pages created for this assignment pass
 
 
 9. Which parts of this assignment did you have trouble with, if any?
