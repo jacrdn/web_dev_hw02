@@ -93,7 +93,20 @@ class Calc {
 }
 
 // setting the buttons as constants
-const numButtons = document.querySelectorAll('#num')
+
+// doing the numbers one at a time for style pts
+const b1 = document.querySelector('#num1')
+const b2 = document.querySelector('#num2')
+const b3 = document.querySelector('#num3')
+const b4 = document.querySelector('#num4')
+const b5 = document.querySelector('#num5')
+const b6 = document.querySelector('#num6')
+const b7 = document.querySelector('#num7')
+const b8 = document.querySelector('#num8')
+const b9 = document.querySelector('#num9')
+const b0 = document.querySelector('#num0')
+const bDot = document.querySelector('#num-dot')
+
 const addButton = document.querySelector('#add')
 const strNumTE = document.querySelector('#str-num')
 const currNumTE = document.querySelector('#curr-num')
@@ -106,13 +119,18 @@ const divButton = document.querySelector('#divide')
 
 const calc = new Calc(strNumTE, currNumTE, choseOpTE)
 
-
-
-numButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        calc.appendNum(button.innerText)
-    })
-})
+// doing the numbers one at a time for style pts
+b1.addEventListener('click', () => {calc.appendNum("1")})
+b2.addEventListener('click', () => {calc.appendNum("2")})
+b3.addEventListener('click', () => {calc.appendNum("3")})
+b4.addEventListener('click', () => {calc.appendNum("4")})
+b5.addEventListener('click', () => {calc.appendNum("5")})
+b6.addEventListener('click', () => {calc.appendNum("6")})
+b7.addEventListener('click', () => {calc.appendNum("7")})
+b8.addEventListener('click', () => {calc.appendNum("8")})
+b9.addEventListener('click', () => {calc.appendNum("9")})
+b0.addEventListener('click', () => {calc.appendNum("0")})
+bDot.addEventListener('click', () => {calc.appendNum(".")})
 
 clearButton.addEventListener('click', () => {
     calc.clear()
